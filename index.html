@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sakshi Raturi</title>
+    <script src="https://kit.fontawesome.com/b8f85117dc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" >
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+$(document).ready(function () {
+   $('.menu-toggler').on('click', function () {
+       $(this).toggleClass('open');
+       $('.top-nav').toggleClass('open');
+   });
+
+    $('.top-nav .nav-link').on('click', function () {
+        $('.menu-toggler').removeClass('open');
+        $('.top-nav').removeClass('open');
+    });
+
+    $('nav a[href*="#"]').on('click', function () {
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top - 100
+        }, 2000);
+    });
+
+    $('#up').on('click', function (){
+        $('html, body').animate({
+            scrollTop: 0
+        }, 2000)
+    })
+
+    AOS.init({
+        easing: 'ease',
+        duration: 1800,
+        once: true
+    })
+});
+
+    </script>
+</head>
+<body>
+    <div class="bg-img">
+        <img src="img/bg/ok1.jpg">
+    </div>  
+    
+    <header>
+        <div class="menu-toggler">
+            <div class="bar half start"></div>
+            <div class="bar"></div>
+            <div class="bar half end"></div>
+        </div>
+        <nav class="top-nav">
+            <ul class="nav-list">
+                <li>
+                    <a href="index.html" class="nav-link" style="color: black">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="nav-link" style="color: black">About</a>
+                </li>
+                <li>
+                    <a href="services" class="nav-link" style="color: black">Services</a>
+                </li>
+                <li>
+                    <a href="#portfolio" class="nav-link" style="color: black">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-link" style="color: black">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="landing-text">
+            <h1>Sakshi Raturi</h1>
+            <h6>Software Developer, Web Developer</h6>
+        </div>
+    </header>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-details" data-aos="fade-left" data-aos-delay="600">
+                <div class="about-heading" style="color: black">
+                    <h1>About</h1>
+                    <h6>Myself</h6>
+                </div>
+                <p class="myselfp"> I am a sharp-witted learner who values simple and smart work techniques
+                     and also a critical thinker with a proven talent for learning quickly in results-oriented 
+                     environments. An Electronics & Communication engineer as per my degree but also learning 
+                     and expanding my area of expertise in Programming and Computer Science.
+                </p>
+
+                <p class="myselfp">
+                    Apart from tech music is where I find solace, I have 3yr experience in Indian classical music 
+                    and also know to play several intruments. I have won laurels for the same for college and school both.
+                    Leadership and team-spirit has been my forte always, I have worked as the head of the college music 
+                    society and Marketing department for several events.
+                </p>
+
+                <p class="myselfp">
+                    My mantra of life is: <b>Do it the simpler way and never confine yourself.</b>
+                </p>
+                <div class="social-media">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="https://www.facebook.com/sakshi.raturi.54" class="icon-link" style="color:#104a8e">
+                                <i class="fab fa-facebook fa-2x"></i>
+                            </a> 
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/sakshi-raturi-6291121a5" class="icon-link"  style="color:#3792cb" >
+                                <i class="fab fa-linkedin fa-2x" ></i>
+                            </a> 
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/sakshi.raturi/" class="icon-link"  style="color:#bc2a8d">
+                                <i class="fab fa-instagram fa-2x"></i>
+                            </a> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Services</h1>
+                <h6>What I can do for you</h6>
+            </div>
+            <div class="my-skills">
+                <div class="skill" data-aos="fade-in" data-aos-delay="250">
+                    <div class="icon-container">
+                        <i class="fa fa-html5" aria-hidden="true"></i>
+                    </div>
+                    <h1>FrontEnd</h1>
+                    <p>
+                        Html,
+                        Css,
+                        Bootstrap,
+                        JavaScript
+                    </p>
+                </div>
+
+                <div class="skill" data-aos="fade-in" data-aos-delay="500">
+                    <div class="icon-container">
+                       <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                    </div>
+                    <h1>BackEnd</h1>
+                    <p>
+                        C, C++,
+                        Java,
+                        Python,
+                        MatLab
+                    </p>
+                </div>
+
+                <div class="skill" data-aos="fade-in" data-aos-delay="750"> 
+                    <div class="icon-container">
+                        <i class="fa fa-database" aria-hidden="true"></i>
+                    </div>
+                    <h1>Database & Others</h1>
+                    <p>
+                        MySQL,
+                        MariaDB,
+                        Iot,
+                        Embedded system
+                    </p> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Portfolio</h1>
+                <h6>View some of my recent work</h6>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="200">
+                    <img src="img/project/project1.jpeg" alt="">
+                </div>
+                <div class="portfolio-description" data-aos="fade-left" data-aos-delay="400">
+                    <h6 style="color: black">Iot & Deep Learning</h6>
+                    <h1>Advance Driver Assistance Car</h1>
+                    <p>   
+                        Currently developing a prototype of a Self-Driving car based on IoT,
+                        Embedded systems, Computer vision & Deep learning which incorporates 
+                        various functionalities like lane detection, object detection, traffic signal recognition.
+                        This project intends to increase car safety and road safety
+                    </p>
+                    <a href="#" class="cta"><b>View Details</b></a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="600">
+                    <h6 style="color: black">C language & IoT</h6>
+                    <h1>Digital Vocalizer</h1>
+                    <p>   
+                        This project aims to lower the barrier between mute people
+                        and rest of the population by developing an electronic 
+                        device that can translate sign language into speech in 
+                        order to make the communication effective.
+                    </p>
+                    <a href="#" class="cta"><b>View Details</b></a>
+                </div>
+                <div class="portfolio-img" data-aos="fade-left" data-aos-delay="800">
+                    <img src="img/project/project2.jpg" alt="">
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="1000">
+                    <img src="img/project/projectEEG.jpg" alt="">
+                </div>
+                <div class="portfolio-description" data-aos="fade-left" data-aos-delay="1200">
+                    <h6 style="color: black">Data Analysis</h6>
+                    <h1>EEG Correlation in Spatial Navigation</h1>
+                    <p>   
+                        In this project we analyze brain's EEG signals in different 
+                        environments followed by extraction, processing and conditioning 
+                        of data using various algorithms and test the best suited 
+                        interface design for spatial navigation.
+                    </p>
+                    <a href="#" class="cta"><b>View Details</b></a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="1400">
+                    <h6 style="color: black">Java, MySql & IoT</h6>
+                    <h1>CorpSec</h1>
+                    <p>   
+                        This Project aims at making a distributed application, 
+                        developed to maintain the details of employees and visitors 
+                        in any organization. It is also an integrated in-house tool 
+                        having a tracking system.
+                    </p>
+                    <a href="#" class="cta"><b>View Details</b></a>
+                </div>
+                <div class="portfolio-img" data-aos="fade-left" data-aos-delay="1600">
+                    <img src="img/project/project_corpfinal.jpg" alt="">
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="1700">
+                    <img src="img/project/Restro.jpg" alt="">
+                </div>
+                <div class="portfolio-description" data-aos="fade-left" data-aos-delay="1800">
+                    <h6 style="color: black">Html,Css & JavaScript </h6>
+                    <h1>Restro</h1>
+                    <p>   
+                        A restaurant website which help reduce 
+                        restaurant’s cost and work as an in house tool for a minimum contact food 
+                        ordering experience with various other functionalities as well. The use of this website is not confined to ordering and delivering food only,
+                        it can also be used as a live pamphlet for everything the resturant offers.
+                    </p>
+                    <a href="#" class="cta"><b>View Details</b></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-heading">
+                <h1> Work Experience</h1>
+                <h6>Past and Current jobs</h6>
+            </div>
+            <div class="timeline" data-aos="fade-down" data-aos-delay="300">
+                <ul>
+                    <li class="date" data-date="Jun'19 - Aug'19">
+                        <h1 style="color:black"><b>Hcl</b></h1>
+                        <p style="color: black">
+                            Designed and developed a Corporate Management System based 
+                            on Java, MySQL, XAMPP and a Corporate Security system based 
+                            on IoT and Embedded systems.
+                        </p>
+                    </li>
+                    <li class="date" data-date="Jan'19 - Mar'19">
+                        <h1 style="color: black"><b>Niec</b></h1>
+                        <p style="color: black">
+                            Worked as the head of the departmental team of Marketing 
+                            & Sponsorship for the cultural and tech fest of the college. 
+                            Led the team and brought various sponsorships. 
+                        </p>
+                    </li>
+                    <li class="date" data-date="Jun'18 - Aug'18">
+                        <h1 style="color: black"><b>Drdo</b></h1>
+                        <p style="color: black">
+                            Supported research and development efforts by collecting and 
+                            converting research data into required formats using self-designed 
+                            algorithms for extraction, artifacts removal and re-conditioning of 
+                            data on MatLab and Brainstorm.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-heading">
+                <h1> Contact</h1>
+                <h6>Let's work together</h6>
+            </div>
+            <form  data-aos="fade-up" data-aos-delay="300" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeT-nbpVmKBchgqDdF8GgWux74dBQKT1aeAm2zJg_KadUfaeA/formResponse" target="_self" method="POST" id="form_rel">
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="entry.1329856221" placeholder="Enter yout name..." required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="entry.1710526039" placeholder="Enter yout email..." required>
+                <label for="service">Services:</label>
+                <select name="entry.270886282" id="service">
+                    <option value="Select" class='opt'>Select</option>
+                    <option value="Software Development" class='opt'>Software Development</option>
+                    <option value="Web Development/Design" class='opt'>Web Development/Design</option>
+                    <option value="IoT & Embedded System" class='opt'>IoT & Embedded System</option>
+                </select>
+                <label for="subject">Subject:</label>
+                <textarea name="entry.1983529488" id="subject" cols="10" rows="10"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+    <footer class="copyright">
+        <div class="up" id="up">
+                <i class="fas fa-chevron-up"></i>   
+        </div>
+        <p>&copy;2020 Sakshi Raturi</p>
+    </footer>
+<script>
+       $(document).ready(function () {
+    resetForms();
+});
+
+function resetForms() {
+    document.getElementById('form_rel').reset();
+}
+</script>
+
+</body>
+</html>
